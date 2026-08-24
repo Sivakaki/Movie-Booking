@@ -9,6 +9,7 @@ import { Favorite } from "./pages/Favourite";
 import { Toaster } from 'react-hot-toast'
 import {Footer} from './components/Footer';
 
+
 const App = () => {
 
   const isAdminRoute = useLocation().pathname.startsWith('/admin')
