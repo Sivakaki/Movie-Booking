@@ -1,5 +1,6 @@
 import { StarIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { timeFormat } from "../lib/timeFormate.js";
 
 export const MovieCard = ({ movie }) => {
   const navigate = useNavigate();
@@ -18,11 +19,11 @@ export const MovieCard = ({ movie }) => {
 
       <p className="text-sm text-gray-400 mt-2">
         {new Date(movie.release_date).getFullYear()} •{" "}
-        {movie.geners
+        {movie.genres
           .slice(0, 2)
           .map((genre) => genre.name)
           .join(" ")}
-        • {movie.runtime}
+        • {timeFormat(movie.runtime)}
       </p>
 
       <div className="flex items-center justify-between mt-4 pb-3">
