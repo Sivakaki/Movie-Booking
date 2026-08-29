@@ -1,3 +1,5 @@
 export const SeatLayout = () => {
-  return <div></div>;
+  return (
+    <div></div>
+  )
 };

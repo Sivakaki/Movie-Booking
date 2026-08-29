@@ -1,5 +1,5 @@
-import { FeatureSection } from "../components/Featuresection";
-import { Herosection } from "../components/Herosection";
+import { FeatureSection } from "../components/Featuresection.jsx";
+import { Herosection } from "../components/Herosection.jsx";
 import { TrailerSection } from "../components/TrailerSection";
 
 export const Home = () => {
